@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+}
+
+.productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .logo-instagram {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .logo-instagram:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    header .logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    .producto img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer .logo-instagram {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header .logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .producto img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer .logo-instagram {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.btn-agregar {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#vaciar-carrito {
+    background-color: #00c8ff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#vaciar-carrito:hover {
+    background-color: #00a1cc;
+    transform: scale(1.05);
+}
+
+
+

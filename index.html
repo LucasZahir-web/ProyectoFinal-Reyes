@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Apple</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <img src="img/logoApple.png" alt="Logo Tienda" class="logo">
+    <h1>Red Apple</h1>
+  </header>
+
+  <main>
+    <section id="productos" class="productos-container"></section>
+  </main>
+
+  <aside id="carrito" class="carrito-container">
+    <h2><i class="fas fa-shopping-cart"></i> Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+  </aside>
+
+  <footer>
+    <a href="https://www.instagram.com/red.applee05" target="_blank">
+      <img src="img/logoInstagram.png" alt="Logo Instagram" class="logo-instagram">
+    </a>
+    <p>Copyright ©2024 - Tienda Virtual</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
